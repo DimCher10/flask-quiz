@@ -9,12 +9,14 @@
 <body>
     <h1>Моя страница</h1>
     <p>Это моя страница</p>
+    {% for item in result %}
+    {{ item[1] }} <br>
+    {% endfor %}
     <p>
-        Вам выпало число {{ num }}
-
+        
     </p>
     <p>
-        <img src="static/{{num}}.jpg">
+        
     </p>
 </body>
 </html>
